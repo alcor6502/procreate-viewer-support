@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procreate Viewer — View Procreate Files on Mac</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --green: #3fb950;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        .badges {
+            margin-top: 20px;
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        /* Features */
+        .features {
+            padding: 40px 0;
+        }
+
+        .features h2 {
+            font-size: 1.6em;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .feature {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1em;
+            margin-bottom: 6px;
+            color: var(--accent);
+        }
+
+        .feature p {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        /* Format table */
+        .formats {
+            padding: 40px 0;
+        }
+
+        .formats h2 {
+            font-size: 1.6em;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--border);
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        td {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .check {
+            color: var(--green);
+        }
+
+        /* Support */
+        .support {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .support h2 {
+            font-size: 1.6em;
+            margin-bottom: 12px;
+        }
+
+        .support p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            margin-left: 12px;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Procreate Viewer</h1>
+        <p>View, explore, and export Procreate artwork files on your Mac — no iPad required.</p>
+        <div class="badges">
+            <span class="badge">macOS 14.0+</span>
+            <span class="badge">Apple Silicon &amp; Intel</span>
+            <span class="badge">QuickLook</span>
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>View Procreate Files</h3>
+                <p>Open .procreate files natively on macOS with smooth zooming and accurate color reproduction.</p>
+            </div>
+            <div class="feature">
+                <h3>Metadata Panel</h3>
+                <p>View title, author, canvas size, DPI, layer count, time spent, and stroke count.</p>
+            </div>
+            <div class="feature">
+                <h3>Image Export</h3>
+                <p>Export to PNG, JPEG, or TIFF with quality options. Batch export multiple files at once.</p>
+            </div>
+            <div class="feature">
+                <h3>Layer Export</h3>
+                <p>Export all layers as individual files, preserving layer names and order.</p>
+            </div>
+            <div class="feature">
+                <h3>iPad Backup Extraction</h3>
+                <p>Reconstruct .procreate files directly from unencrypted iPad backups, no third-party tools needed.</p>
+            </div>
+            <div class="feature">
+                <h3>Finder Integration</h3>
+                <p>QuickLook thumbnails and Space bar previews for .procreate files directly in Finder.</p>
+            </div>
+            <div class="feature">
+                <h3>Color Spaces</h3>
+                <p>Handles sRGB and Display P3 color profiles for accurate color output.</p>
+            </div>
+            <div class="feature">
+                <h3>Fast &amp; Parallel</h3>
+                <p>Multi-threaded chunk decompression across all CPU cores for instant file loading.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formats">
+        <h2>Export Formats</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Format</th>
+                    <th>Transparency</th>
+                    <th>Compression</th>
+                    <th>Best For</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PNG</td>
+                    <td class="check">&#10003;</td>
+                    <td>Lossless</td>
+                    <td>Web, archival</td>
+                </tr>
+                <tr>
+                    <td>JPEG</td>
+                    <td>&#10007;</td>
+                    <td>Lossy (adjustable)</td>
+                    <td>Sharing, small files</td>
+                </tr>
+                <tr>
+                    <td>TIFF</td>
+                    <td class="check">&#10003;</td>
+                    <td>Lossless</td>
+                    <td>Print, high quality</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="support">
+        <h2>Support</h2>
+        <p>Found a bug or have a feature request? We'd love to hear from you.</p>
+        <a href="https://github.com/alcor6502/procreate-viewer-support/issues" class="btn btn-primary">Open an Issue</a>
+        <a href="https://github.com/alcor6502/procreate-viewer-support/blob/main/PRIVACY.md" class="btn btn-secondary">Privacy Policy</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Alfredo Cortellini. All rights reserved.</p>
+        <p style="margin-top: 8px;">Procreate is a registered trademark of Savage Interactive Pty Ltd.<br>Procreate Viewer is not affiliated with Savage Interactive.</p>
+    </footer>
+</div>
+
+</body>
+</html>
