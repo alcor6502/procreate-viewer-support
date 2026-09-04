@@ -1,8 +1,8 @@
-# LayerScope
+# ArtRescue
 
 **A native macOS app for viewing and exporting Procreate artwork files.**
 
-LayerScope lets you open `.procreate` files on your Mac, view artwork with full metadata, and export images to standard formats — all without needing an iPad.
+ArtRescue (formerly LayerScope) lets you open `.procreate` files on your Mac, view artwork with full metadata, and export images to standard formats — all without needing an iPad.
 
 ![Platform](https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey)
 ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
@@ -51,13 +51,15 @@ LayerScope lets you open `.procreate` files on your Mac, view artwork with full 
 
 Found a bug or have a feature request? Please [open an issue](https://github.com/alcor6502/layerscope-support/issues).
 
+Website: https://alcor6502.github.io/layerscope-support/
+
 ---
 
 ## Privacy
 
-LayerScope respects your privacy. See our full [Privacy Policy](PRIVACY.md).
+ArtRescue respects your privacy. See our full [Privacy Policy](PRIVACY.md).
 
-**In short:** LayerScope runs entirely on your Mac. It does not collect, transmit, or store any personal data. No analytics, no tracking, no network connections.
+**In short:** ArtRescue runs entirely on your Mac. It does not collect, transmit, or store any personal data. No analytics, no tracking, no network connections.
 
 ---
 
@@ -67,4 +69,4 @@ Copyright (c) 2026 Alfredo Cortellini. All rights reserved.
 
 ---
 
-**Note:** Procreate is a registered trademark of Savage Interactive Pty Ltd. LayerScope is an independent project and is not affiliated with, endorsed by, or sponsored by Savage Interactive.
+**Note:** Procreate is a registered trademark of Savage Interactive Pty Ltd. ArtRescue is an independent project and is not affiliated with, endorsed by, or sponsored by Savage Interactive.
