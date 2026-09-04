@@ -1,14 +1,14 @@
 # Privacy Policy
 
-**ArtRescue** (formerly LayerScope) — Last updated: September 4, 2026
+**LayerScope** — Last updated: September 4, 2026
 
 ## Overview
 
-ArtRescue is a native macOS application that runs entirely on your device. It is designed with privacy as a core principle.
+LayerScope is a native macOS application that runs entirely on your device. It is designed with privacy as a core principle.
 
 ## Data Collection
 
-**ArtRescue does not collect any data.** Specifically:
+**LayerScope does not collect any data.** Specifically:
 
 - **No personal information** is collected, stored, or transmitted
 - **No analytics or tracking** of any kind
@@ -18,17 +18,17 @@ ArtRescue is a native macOS application that runs entirely on your device. It is
 
 ## File Access
 
-ArtRescue accesses only the files you explicitly open or select through macOS file dialogs. The app uses Apple's App Sandbox, which restricts file access to user-selected locations only. Files are processed locally on your Mac and are never uploaded or shared.
+LayerScope accesses only the files you explicitly open or select through macOS file dialogs. The app uses Apple's App Sandbox, which restricts file access to user-selected locations only. Files are processed locally on your Mac and are never uploaded or shared.
 
 When extracting from iPad backups, the app reads the backup database and files directly from your local filesystem. No data leaves your device.
 
 ## Third-Party Services
 
-ArtRescue does not integrate with any third-party services, SDKs, or APIs.
+LayerScope does not integrate with any third-party services, SDKs, or APIs.
 
 ## Children's Privacy
 
-ArtRescue does not collect data from anyone, including children.
+LayerScope does not collect data from anyone, including children.
 
 ## Changes to This Policy
 

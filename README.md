@@ -1,8 +1,8 @@
-# ArtRescue
+# LayerScope
 
 **A native macOS app for viewing and exporting Procreate artwork files.**
 
-ArtRescue (formerly LayerScope) lets you open `.procreate` files on your Mac, view artwork with full metadata, and export images to standard formats — all without needing an iPad.
+LayerScope lets you open `.procreate` files on your Mac with Finder thumbnails and Quick Look — then export images and layers when you need to. No iPad required.
 
 ![Platform](https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey)
 ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
@@ -11,7 +11,8 @@ ArtRescue (formerly LayerScope) lets you open `.procreate` files on your Mac, vi
 
 ## Features
 
-- **Open Procreate Files** — View `.procreate` artwork natively on macOS
+- **Open on Mac** — View `.procreate` artwork natively on macOS
+- **Finder & Quick Look** — Real thumbnails and Space bar previews
 - **High-Quality Display** — Smooth zooming and panning with accurate color reproduction
 - **Metadata Panel** — View title, author, canvas size, DPI, layer count, time spent, stroke count
 - **Image Export** — Export to PNG, JPEG, or TIFF with quality options
@@ -19,7 +20,6 @@ ArtRescue (formerly LayerScope) lets you open `.procreate` files on your Mac, vi
 - **Batch File Export** — Export multiple `.procreate` files at once
 - **Extract from iPad Backup** — Reconstruct `.procreate` files from unencrypted iPad backups
 - **Copy to Clipboard** — Quick copy for pasting into other apps
-- **Finder Integration** — QuickLook thumbnails and Space bar previews directly in Finder
 - **Color Space Support** — Handles sRGB and Display P3 color profiles
 
 ---
@@ -57,9 +57,9 @@ Website: https://alcor6502.github.io/layerscope-support/
 
 ## Privacy
 
-ArtRescue respects your privacy. See our full [Privacy Policy](PRIVACY.md).
+LayerScope respects your privacy. See our full [Privacy Policy](PRIVACY.md).
 
-**In short:** ArtRescue runs entirely on your Mac. It does not collect, transmit, or store any personal data. No analytics, no tracking, no network connections.
+**In short:** LayerScope runs entirely on your Mac. It does not collect, transmit, or store any personal data. No analytics, no tracking, no network connections.
 
 ---
 
@@ -69,4 +69,4 @@ Copyright (c) 2026 Alfredo Cortellini. All rights reserved.
 
 ---
 
-**Note:** Procreate is a registered trademark of Savage Interactive Pty Ltd. ArtRescue is an independent project and is not affiliated with, endorsed by, or sponsored by Savage Interactive.
+**Note:** Procreate is a registered trademark of Savage Interactive Pty Ltd. LayerScope is an independent project and is not affiliated with, endorsed by, or sponsored by Savage Interactive.
